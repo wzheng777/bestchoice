@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Veterinary Clinic | Best Choice Millwork Ltd</title>
+    <meta name="description" content="Durable custom cabinetry designed for veterinary clinic environments by Best Choice Millwork Ltd.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#64748B',
+                        secondary: '#94A3B8',
+                        cta: '#F97316',
+                        ctaHover: '#EA580C',
+                        background: '#F8FAFC',
+                        textMain: '#334155',
+                        textMuted: '#64748B',
+                        dark: '#1E293B',
+                        wood: '#8B4513'
+                    },
+                    fontFamily: {
+                        heading: ['Poppins', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 100; align-items: center; justify-content: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; }
+    </style>
+</head>
+<body class="bg-background font-body text-textMain">
+    <!-- Navigation -->
+    <nav class="fixed top-4 left-4 right-4 z-50 bg-white/90 backdrop-blur-md rounded-xl shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center gap-3 cursor-pointer">
+                    <svg class="w-10 h-10 text-wood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    <span class="font-heading font-bold text-xl text-dark">Best Choice Millwork</span>
+                </a>
+                <a href="../index.html#projects" class="flex items-center gap-2 text-textMuted hover:text-dark transition-colors duration-200 cursor-pointer">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                    </svg>
+                    Back to Projects
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-dark to-primary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-dark text-white px-4 py-1 rounded-full text-sm font-medium border border-gray-600">Veterinary</span>
+                <span class="text-gray-300">Healthcare Project</span>
+            </div>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white">Epic Veterinary Clinic</h1>
+            <p class="text-xl text-gray-300 mt-4 max-w-3xl">Durable, hygienic custom cabinetry designed specifically for veterinary clinic environments and animal care facilities.</p>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="font-heading text-2xl font-bold text-dark mb-6">Project Overview</h2>
+                    <p class="text-textMuted text-lg leading-relaxed mb-6">
+                        The Epic Veterinary Clinic project represents our expertise in creating specialized millwork for animal care facilities. This comprehensive installation includes examination room cabinetry, surgical suite storage, reception areas, and kennel room fixtures designed to meet the unique demands of veterinary medicine.
+                    </p>
+                    <p class="text-textMuted text-lg leading-relaxed mb-6">
+                        Understanding the importance of hygiene and durability in veterinary settings, we selected materials and finishes that are resistant to moisture, easy to clean, and can withstand frequent sanitization. The cabinet designs incorporate rounded edges and seamless surfaces to prevent the accumulation of debris and facilitate thorough cleaning.
+                    </p>
+                    <p class="text-textMuted text-lg leading-relaxed">
+                        From the welcoming reception area to the functional treatment rooms, every element was designed with both the animals and their caregivers in mind. Storage solutions accommodate veterinary equipment, medications, and supplies while maintaining an organized, professional environment that puts pet owners at ease.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg h-fit">
+                    <h3 class="font-heading font-bold text-xl text-dark mb-6">Project Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-gray-100 pb-3">
+                            <span class="text-textMuted">Category</span>
+                            <span class="font-medium text-dark">Veterinary</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-3">
+                            <span class="text-textMuted">Location</span>
+                            <span class="font-medium text-dark">Metro Vancouver</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-100 pb-3">
+                            <span class="text-textMuted">Scope</span>
+                            <span class="font-medium text-dark">Complete Clinic Millwork</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-textMuted">Images</span>
+                            <span class="font-medium text-dark">47 Photos</span>
+                        </div>
+                    </div>
+                    <a href="../index.html#contact" class="mt-8 w-full bg-cta text-white py-3 rounded-lg font-semibold hover:bg-ctaHover transition-colors duration-200 cursor-pointer flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        Request Similar Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-heading text-2xl font-bold text-dark mb-8">Project Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-1.jpg" alt="Epic Veterinary 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-2.jpg" alt="Epic Veterinary 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-3.jpg" alt="Epic Veterinary 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-4.jpg" alt="Epic Veterinary 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-5.jpg" alt="Epic Veterinary 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-6.jpg" alt="Epic Veterinary 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-7.jpg" alt="Epic Veterinary 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-8.jpg" alt="Epic Veterinary 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-9.jpg" alt="Epic Veterinary 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-10.jpg" alt="Epic Veterinary 10" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-11.jpg" alt="Epic Veterinary 11" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-12.jpg" alt="Epic Veterinary 12" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-13.jpg" alt="Epic Veterinary 13" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-14.jpg" alt="Epic Veterinary 14" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-15.jpg" alt="Epic Veterinary 15" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-16.jpg" alt="Epic Veterinary 16" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-17.jpg" alt="Epic Veterinary 17" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-18.jpg" alt="Epic Veterinary 18" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-19.jpg" alt="Epic Veterinary 19" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-20.jpg" alt="Epic Veterinary 20" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-21.jpg" alt="Epic Veterinary 21" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-22.jpg" alt="Epic Veterinary 22" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-23.jpg" alt="Epic Veterinary 23" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-24.jpg" alt="Epic Veterinary 24" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-25.jpg" alt="Epic Veterinary 25" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-26.jpg" alt="Epic Veterinary 26" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-27.jpg" alt="Epic Veterinary 27" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-28.jpg" alt="Epic Veterinary 28" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-29.jpg" alt="Epic Veterinary 29" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-30.jpg" alt="Epic Veterinary 30" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-31.jpg" alt="Epic Veterinary 31" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-32.jpg" alt="Epic Veterinary 32" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-33.jpg" alt="Epic Veterinary 33" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-34.jpg" alt="Epic Veterinary 34" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-35.jpg" alt="Epic Veterinary 35" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-36.jpg" alt="Epic Veterinary 36" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-37.jpg" alt="Epic Veterinary 37" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-38.jpg" alt="Epic Veterinary 38" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-39.jpg" alt="Epic Veterinary 39" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-40.jpg" alt="Epic Veterinary 40" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-41.jpg" alt="Epic Veterinary 41" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-42.jpg" alt="Epic Veterinary 42" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-43.jpg" alt="Epic Veterinary 43" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-44.jpg" alt="Epic Veterinary 44" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-45.jpg" alt="Epic Veterinary 45" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-46.jpg" alt="Epic Veterinary 46" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(this)">
+                    <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_epic-veterinary-47.jpg" alt="Epic Veterinary 47" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-heading text-2xl font-bold text-dark mb-8">Other Projects</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="axis-care.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice-millwork_axis_coastal_exterior-20.jpg" alt="Axis Care Pharmacy" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-cta text-white px-3 py-1 rounded-full text-sm font-medium">Pharmacy</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-lg text-dark">Axis Care Pharmacy</h3>
+                    </div>
+                </a>
+                <a href="mishe-optometry.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_mishe-optometry-1.jpg" alt="Mishe Optometry" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Eye Clinic</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-lg text-dark">Mishe Optometry</h3>
+                    </div>
+                </a>
+                <a href="neurofocus.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://bestchoicemillwork.com/mt-content/uploads/2022/07/best_choice_millwork_neurofocus_physiotherapy-1.jpg" alt="NeuroFocus Clinic" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-4 left-4 bg-wood text-white px-3 py-1 rounded-full text-sm font-medium">Physiotherapy</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-lg text-dark">NeuroFocus Clinic</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <svg class="w-10 h-10 text-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    <span class="font-heading font-bold text-xl text-white">Best Choice Millwork</span>
+                </div>
+                <a href="tel:+17788899388" class="text-gray-400 hover:text-cta transition-colors duration-200 cursor-pointer">(778) 889-9388</a>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-500 text-sm">&copy; 2025 Best Choice Millwork Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="absolute top-4 right-4 text-white hover:text-cta transition-colors duration-200 cursor-pointer" aria-label="Close">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <script>
+        function openLightbox(el) {
+            const img = el.querySelector('img');
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    </script>
+</body>
+</html>
