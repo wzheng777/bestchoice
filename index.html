@@ -653,7 +653,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-heading font-semibold text-dark">Location</h4>
-                                    <p class="text-textMuted">Surrey, B.C, Canada</p>
+                                    <p class="text-textMuted">Unit #109, 13030 115 Ave, Surrey, B.C, Canada</p>
                                 </div>
                             </div>
                         </div>
@@ -828,15 +828,28 @@
         });
 
         // Initialize Map (Surrey, BC coordinates)
-        const map = L.map('map').setView([49.1913, -122.8490], 12);
+        const mapContainer = document.getElementById('map');
+        if (mapContainer) {
+            const map = L.map('map', {
+                center: [49.1913, -122.8490],
+                zoom: 13,
+                scrollWheelZoom: false
+            });
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
-        // Add marker for Surrey, BC
-        const marker = L.marker([49.1913, -122.8490]).addTo(map);
-        marker.bindPopup('<strong>Best Choice Millwork Ltd.</strong><br>Surrey, B.C, Canada<br><a href="tel:+17788899388">(778) 889-9388</a>').openPopup();
+            // Add marker for Surrey, BC
+            const marker = L.marker([49.1913, -122.8490]).addTo(map);
+            marker.bindPopup('<strong>Best Choice Millwork Ltd.</strong><br>Surrey, B.C, Canada<br><a href="tel:+17788899388">(778) 889-9388</a>').openPopup();
+
+            // Fix map rendering issue
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 100);
+        }
 
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
